@@ -4,6 +4,14 @@ Open-source agent skills that help occupational medicine and occupational health
 
 This repository focuses on reusable visual design and image-generation workflows for educational materials, workplace health communication, training, presentations, and research. It does not provide diagnosis, treatment, fitness-for-work decisions, or other clinical decision support.
 
+## How meta-prompting works
+
+```mermaid
+flowchart LR
+    A["👤 Your Idea"] --> B["🤖 AI Agent"]
+    B -- "Meta-Prompt" --> C["🖼️ Generate Image"]
+```
+
 ## Included skills
 
 | Skill | Purpose |
