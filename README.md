@@ -19,8 +19,48 @@ The same hearing-protection message can take very different visual directions. T
 | Generic GPT Image 2 | Design-guided: pop-art graffiti | Design-guided: children's storybook |
 | :---: | :---: | :---: |
 | [![Generic GPT Image 2 hearing-protection poster](examples/generic-gpt-image-2-hearing-protection-poster.webp)](examples/generic-gpt-image-2-hearing-protection-poster.webp) | [![Pop-art graffiti design-guided hearing-protection poster](examples/pop-art-graffiti-design-guided-hearing-protection-poster.webp)](examples/pop-art-graffiti-design-guided-hearing-protection-poster.webp) | [![Children's storybook design-guided hearing-protection poster](examples/childrens-storybook-design-guided-hearing-protection-poster.webp)](examples/childrens-storybook-design-guided-hearing-protection-poster.webp) |
+| **About ฿1.45** | **About ฿1.45** | **About ฿1.45** |
 
 > These are illustrative AI-generated outputs. Verify all medical, safety, and regulatory content before use.
+
+All three examples used `openai/gpt-image-2`, medium quality, a `9:16` aspect ratio, and one output. The estimated price is approximately US$0.043, or ฿1.45, per image. Actual OpenRouter charges can vary slightly with prompt length, reference-image inputs, model pricing, and exchange rates.
+
+## Pay only for the images you create
+
+This workflow does not require a paid ChatGPT subscription. OpenRouter bills each API generation separately, while ChatGPT subscriptions bundle image creation with many other ChatGPT features.
+
+| ChatGPT plan | Published US price | Approximate Thai-baht price per month | Published image access | Same spend at ฿1.45 per image |
+| --- | ---: | ---: | --- | ---: |
+| Free | $0 | ฿0 | Limited and slower | — |
+| Go | $8/month | About ฿269/month | More than Free; no fixed public image quota | About 185 images |
+| Plus | $20/month | About ฿673/month | More complex and accurate creation; limits apply | About 464 images |
+| Pro | $200/month | About ฿6,727/month | Unlimited and faster, subject to abuse guardrails | About 4,639 images |
+
+Prices are a simple cost comparison, not equivalent products: ChatGPT subscriptions include many non-image features. Thai-baht figures use the Bank of Thailand's 24 July 2026 USD transfer rate of ฿33.6367 per US$1 and exclude taxes, card fees, and regional pricing. See [OpenAI's consumer-plan announcement](https://openai.com/index/introducing-chatgpt-go/), [current ChatGPT plan details](https://chatgpt.com/pricing/), [OpenAI image pricing](https://developers.openai.com/api/docs/pricing#image-generation), and [Bank of Thailand exchange rates](https://www.bot.or.th/en/statistics/financial-institutions/exchange-rate.html).
+
+## What you can customize
+
+The agent turns a short idea into a detailed production prompt, while keeping the important creative and delivery controls explicit:
+
+| Control | What you can specify |
+| --- | --- |
+| Aspect ratio | `1:1`, `3:2`, `2:3`, `4:3`, `3:4`, `16:9`, `9:16`, `21:9`, or automatic |
+| Image size | Choose the intended layout and aspect ratio; the model selects native pixels. These examples are 864×1536. Exact delivery dimensions can be produced with a local resize or crop. |
+| Quality and cost | `low`, `medium`, `high`, or automatic |
+| Visual direction | Subject, action, composition, art style, color palette, lighting, viewpoint, mood, and exclusions |
+| Visible text | Exact headline, labels, language, hierarchy, and placement |
+| Design references | Use up to 16 images to guide identity, product geometry, composition, or style |
+| Batch size | Generate 1–10 images in one request |
+| Delivery | PNG or JPEG, JPEG compression, and automatic or opaque background |
+
+For example:
+
+```text
+Create a 9:16 hearing-protection poster for factory workers. Use medium quality,
+a friendly children's-storybook style, a warm color palette, and this exact
+headline: "Protect Your Hearing Every Day". Show correct earmuff placement,
+avoid identifiable people and company branding, and deliver one PNG image.
+```
 
 ## Included skills
 
