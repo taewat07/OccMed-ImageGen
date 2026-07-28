@@ -1,0 +1,4 @@
+interface:
+  display_name: "Meta-Prompt Image Generation"
+  short_description: "Compile prompts and generate via OpenRouter"
+  default_prompt: "Use $metaprompt-image-generation to guide me through a short image-specification intake, compile my rough prompt, and generate it through OpenRouter."

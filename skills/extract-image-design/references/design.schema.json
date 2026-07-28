@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.skills.example/extract-image-design/design.schema.json",
+  "title": "Extracted Image Design",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "identity",
+    "provenance",
+    "taxonomy",
+    "sources",
+    "observations",
+    "transferable_design_system",
+    "content_specific_elements",
+    "prompt_packet"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["slug", "title", "summary", "status"],
+      "properties": {
+        "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "title": { "type": "string", "minLength": 1 },
+        "summary": { "type": "string" },
+        "status": { "enum": ["draft", "complete"] }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["created_at", "updated_at", "attribution_notes"],
+      "properties": {
+        "created_at": { "type": "string", "format": "date-time" },
+        "updated_at": { "type": "string", "format": "date-time" },
+        "attribution_notes": { "type": "string" }
+      }
+    },
+    "taxonomy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tags", "collections"],
+      "properties": {
+        "tags": { "$ref": "#/$defs/uniqueStrings" },
+        "collections": { "$ref": "#/$defs/uniqueStrings" }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "original_name", "sha256", "bytes", "role"],
+        "properties": {
+          "path": { "type": "string", "pattern": "^sources/[^/]+$" },
+          "original_name": { "type": "string", "minLength": 1 },
+          "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "bytes": { "type": "integer", "minimum": 1 },
+          "role": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "observations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["composition", "visual_hierarchy", "geometry", "color", "typography", "linework", "texture", "lighting", "medium", "motifs", "mood"],
+      "properties": {
+        "composition": { "$ref": "#/$defs/observations" },
+        "visual_hierarchy": { "$ref": "#/$defs/observations" },
+        "geometry": { "$ref": "#/$defs/observations" },
+        "color": { "$ref": "#/$defs/observations" },
+        "typography": { "$ref": "#/$defs/observations" },
+        "linework": { "$ref": "#/$defs/observations" },
+        "texture": { "$ref": "#/$defs/observations" },
+        "lighting": { "$ref": "#/$defs/observations" },
+        "medium": { "$ref": "#/$defs/observations" },
+        "motifs": { "$ref": "#/$defs/observations" },
+        "mood": { "$ref": "#/$defs/observations" }
+      }
+    },
+    "transferable_design_system": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["invariants", "flexible_traits", "design_rules", "avoid"],
+      "properties": {
+        "invariants": { "$ref": "#/$defs/strings" },
+        "flexible_traits": { "$ref": "#/$defs/strings" },
+        "design_rules": { "$ref": "#/$defs/strings" },
+        "avoid": { "$ref": "#/$defs/strings" }
+      }
+    },
+    "content_specific_elements": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["subjects", "text", "logos_or_marks", "incidental_details", "do_not_transfer"],
+      "properties": {
+        "subjects": { "$ref": "#/$defs/strings" },
+        "text": { "$ref": "#/$defs/strings" },
+        "logos_or_marks": { "$ref": "#/$defs/strings" },
+        "incidental_details": { "$ref": "#/$defs/strings" },
+        "do_not_transfer": { "$ref": "#/$defs/strings" }
+      }
+    },
+    "prompt_packet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["direction", "positive_prompt", "negative_prompt", "variables", "essential_invariants", "flexible_characteristics"],
+      "properties": {
+        "direction": { "type": "string" },
+        "positive_prompt": { "type": "string" },
+        "negative_prompt": { "type": "string" },
+        "variables": {
+          "type": "object",
+          "additionalProperties": { "type": "string" },
+          "required": ["subject"]
+        },
+        "essential_invariants": { "$ref": "#/$defs/strings" },
+        "flexible_characteristics": { "$ref": "#/$defs/strings" }
+      }
+    }
+  },
+  "$defs": {
+    "strings": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "uniqueStrings": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "observations": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/observation" }
+    },
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["statement", "evidence", "confidence", "inferred"],
+      "properties": {
+        "statement": { "type": "string", "minLength": 1 },
+        "evidence": { "$ref": "#/$defs/strings" },
+        "confidence": { "enum": ["high", "medium", "low"] },
+        "inferred": { "type": "boolean" }
+      }
+    }
+  }
+}
