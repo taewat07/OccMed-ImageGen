@@ -52,16 +52,21 @@ Prompt สั้น ๆ อาจเปิดช่องให้โมเด�
 
 ### ตัวอย่างภาพ
 
-ทั้งสามภาพสื่อเรื่องการป้องกันเสียงดังเหมือนกัน ภาพแรกใช้คำสั่งทั่วไป ส่วนอีกสองภาพใช้ระบบงานออกแบบที่สกัดจากภาพอ้างอิง
+ทั้งหกภาพสื่อเรื่องการป้องกันเสียงดังเหมือนกัน ภาพแรกใช้คำสั่งทั่วไป ส่วนอีกห้าภาพแสดงให้เห็นว่าระบบงานออกแบบที่สกัดจากภาพอ้างอิงช่วยเปลี่ยนหน้าตาของเนื้อหาเดิมได้มากเพียงใด
 
 | GPT Image 2 แบบทั่วไป | ใช้ดีไซน์ pop-art graffiti | ใช้ดีไซน์หนังสือนิทานเด็ก |
 | :---: | :---: | :---: |
 | [![โปสเตอร์ป้องกันเสียงดังแบบทั่วไป](../../examples/generic-gpt-image-2-hearing-protection-poster.webp)](../../examples/generic-gpt-image-2-hearing-protection-poster.webp) | [![โปสเตอร์ป้องกันเสียงดังสไตล์ pop-art graffiti](../../examples/pop-art-graffiti-design-guided-hearing-protection-poster.webp)](../../examples/pop-art-graffiti-design-guided-hearing-protection-poster.webp) | [![โปสเตอร์ป้องกันเสียงดังสไตล์หนังสือนิทานเด็ก](../../examples/childrens-storybook-design-guided-hearing-protection-poster.webp)](../../examples/childrens-storybook-design-guided-hearing-protection-poster.webp) |
 | ประมาณ ฿1.45 | ประมาณ ฿1.45 | ประมาณ ฿1.45 |
 
+| ใช้ดีไซน์งานกระดาษซ้อนชั้น | ใช้ดีไซน์แมว 3D น่ารัก | ใช้ดีไซน์พิกเซลอาร์ตไคจู |
+| :---: | :---: | :---: |
+| [![โปสเตอร์ป้องกันเสียงดังสไตล์งานกระดาษซ้อนชั้น](../../examples/papercraft-design-guided-hearing-protection-poster.webp)](../../examples/papercraft-design-guided-hearing-protection-poster.webp) | [![โปสเตอร์ป้องกันเสียงดังสไตล์แมว 3D น่ารัก](../../examples/cute-3d-cat-design-guided-hearing-protection-poster.webp)](../../examples/cute-3d-cat-design-guided-hearing-protection-poster.webp) | [![โปสเตอร์ป้องกันเสียงดังสไตล์พิกเซลอาร์ตไคจู](../../examples/pixel-art-kaiju-design-guided-hearing-protection-poster.webp)](../../examples/pixel-art-kaiju-design-guided-hearing-protection-poster.webp) |
+| $0.133 · ประมาณ ฿4.47 | $0.132 · ประมาณ ฿4.44 | $0.132 · ประมาณ ฿4.44 |
+
 > ภาพเหล่านี้เป็นตัวอย่างจาก AI ควรตรวจความถูกต้องทางการแพทย์ ความปลอดภัย และกฎหมายก่อนนำไปใช้จริง
 
-ทั้งสามภาพสร้างด้วย `openai/gpt-image-2` คุณภาพ `medium` อัตราส่วน `9:16` ครั้งละหนึ่งภาพ ราคาประเมินอยู่ที่ประมาณ US$0.043 หรือ ฿1.45 ต่อภาพ ค่าใช้จ่ายจริงอาจต่างออกไปเล็กน้อยตามความยาวของ prompt จำนวนภาพอ้างอิง ราคาของโมเดล และอัตราแลกเปลี่ยน
+ภาพแถวแรกสร้างด้วย `openai/gpt-image-2` คุณภาพ `medium` อัตราส่วน `9:16` ครั้งละหนึ่งภาพ ราคาประเมินอยู่ที่ประมาณ US$0.043 หรือ ฿1.45 ต่อภาพ ส่วนแถวที่สองแสดงค่าใช้จ่ายจริงที่ให้มาพร้อมกับแต่ละภาพ ค่าใช้จ่ายสุดท้ายบน OpenRouter อาจต่างกันตามความยาวของ prompt จำนวนภาพอ้างอิง ราคาโมเดล การตั้งค่า และอัตราแลกเปลี่ยน
 
 ### จ่ายตามจำนวนภาพที่สร้าง
 

@@ -52,16 +52,21 @@ Want to see which model is performing best now? Visit the independent [Arena tex
 
 ### Example images
 
-All three posters carry the same hearing protection message. The first uses a general prompt. The other two use design systems extracted from reference images.
+All six posters carry the same hearing protection message. The first uses a general prompt. The other five show how extracted design systems can give the same content a completely different visual identity.
 
 | General GPT Image 2 | Pop-art graffiti design | Children's storybook design |
 | :---: | :---: | :---: |
 | [![General hearing protection poster](examples/generic-gpt-image-2-hearing-protection-poster.webp)](examples/generic-gpt-image-2-hearing-protection-poster.webp) | [![Pop-art graffiti hearing protection poster](examples/pop-art-graffiti-design-guided-hearing-protection-poster.webp)](examples/pop-art-graffiti-design-guided-hearing-protection-poster.webp) | [![Children's storybook hearing protection poster](examples/childrens-storybook-design-guided-hearing-protection-poster.webp)](examples/childrens-storybook-design-guided-hearing-protection-poster.webp) |
 | About ฿1.45 | About ฿1.45 | About ฿1.45 |
 
+| Layered papercraft design | Cute 3D cat design | Pixel-art kaiju design |
+| :---: | :---: | :---: |
+| [![Layered papercraft hearing protection poster](examples/papercraft-design-guided-hearing-protection-poster.webp)](examples/papercraft-design-guided-hearing-protection-poster.webp) | [![Cute 3D cat hearing protection poster](examples/cute-3d-cat-design-guided-hearing-protection-poster.webp)](examples/cute-3d-cat-design-guided-hearing-protection-poster.webp) | [![Pixel-art kaiju hearing protection poster](examples/pixel-art-kaiju-design-guided-hearing-protection-poster.webp)](examples/pixel-art-kaiju-design-guided-hearing-protection-poster.webp) |
+| $0.133 · about ฿4.47 | $0.132 · about ฿4.44 | $0.132 · about ฿4.44 |
+
 > These images came from AI. Check the medical, safety, and legal details before using them.
 
-Each example used `openai/gpt-image-2` at `medium` quality with a `9:16` aspect ratio and one output. The estimated price is about US$0.043, or ฿1.45, per image. The final OpenRouter charge can change slightly with prompt length, reference images, model pricing, and the exchange rate.
+The first row used `openai/gpt-image-2` at `medium` quality with a `9:16` aspect ratio and one output. Its estimated price is about US$0.043, or ฿1.45, per image. The second row shows the actual generation costs supplied with those images. The final OpenRouter charge can change with prompt length, reference images, model pricing, settings, and the exchange rate.
 
 ### Pay for the images you make
 
