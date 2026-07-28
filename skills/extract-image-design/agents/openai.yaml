@@ -1,0 +1,4 @@
+interface:
+  display_name: "Extract Image Design"
+  short_description: "Catalog reusable design systems from images"
+  default_prompt: "Use $extract-image-design to extract this image into a reusable design catalog entry."
