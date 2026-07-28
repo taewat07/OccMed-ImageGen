@@ -8,19 +8,21 @@ It makes images. It does not diagnose, treat, or decide whether someone is fit f
 
 ### Regular prompt vs meta-prompt
 
+**Regular prompt**
+
 ```mermaid
-flowchart TB
-    subgraph regular["Regular prompt"]
-        direction LR
-        R1["👤 User"] -- "Prompt" --> R2["🖼️ Image generator"]
-        R2 --> R3["⚠️ May miss details"]
-    end
-    subgraph meta["Meta-prompt"]
-        direction LR
-        M1["👤 Your idea"] --> M2["🤖 AI agent"]
-        M2 -- "Detailed meta-prompt" --> M3["🖼️ Image generator"]
-        M3 --> M4["✅ More controlled result"]
-    end
+flowchart LR
+    R1["👤 User"] -- "Prompt" --> R2["🖼️ Image generator"]
+    R2 --> R3["⚠️ May miss details"]
+```
+
+**Meta-prompt**
+
+```mermaid
+flowchart LR
+    M1["👤 Your idea"] --> M2["🤖 AI agent"]
+    M2 -- "Detailed meta-prompt" --> M3["🖼️ Image generator"]
+    M3 --> M4["✅ More controlled result"]
 ```
 
 A short prompt can leave important details open to chance. With meta-prompting, you describe what you need in everyday language and the agent turns it into a clear image brief—including layout, color, style, exact text, and anything that must stay out of the image.
