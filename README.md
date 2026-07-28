@@ -12,6 +12,16 @@ flowchart LR
     B -- "Meta-Prompt" --> C["🖼️ Generate Image"]
 ```
 
+## Example results
+
+The same hearing-protection message can take very different visual directions. The first poster uses generic GPT Image 2 styling; the others use design systems extracted from visual references.
+
+| Generic GPT Image 2 | Design-guided: pop-art graffiti | Design-guided: children's storybook |
+| :---: | :---: | :---: |
+| [![Generic GPT Image 2 hearing-protection poster](examples/generic-gpt-image-2-hearing-protection-poster.webp)](examples/generic-gpt-image-2-hearing-protection-poster.webp) | [![Pop-art graffiti design-guided hearing-protection poster](examples/pop-art-graffiti-design-guided-hearing-protection-poster.webp)](examples/pop-art-graffiti-design-guided-hearing-protection-poster.webp) | [![Children's storybook design-guided hearing-protection poster](examples/childrens-storybook-design-guided-hearing-protection-poster.webp)](examples/childrens-storybook-design-guided-hearing-protection-poster.webp) |
+
+> These are illustrative AI-generated outputs. Verify all medical, safety, and regulatory content before use.
+
 ## Included skills
 
 | Skill | Purpose |
