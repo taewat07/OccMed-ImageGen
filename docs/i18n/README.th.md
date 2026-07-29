@@ -54,19 +54,33 @@ Prompt สั้น ๆ อาจเปิดช่องให้โมเด�
 
 ทั้งหกภาพสื่อเรื่องการป้องกันเสียงดังเหมือนกัน ภาพแรกใช้คำสั่งทั่วไป ส่วนอีกห้าภาพแสดงให้เห็นว่าระบบงานออกแบบที่สกัดจากภาพอ้างอิงช่วยเปลี่ยนหน้าตาของเนื้อหาเดิมได้มากเพียงใด
 
+สำหรับภาพตัวอย่าง GPT Image 2 ขนาด 864×1536 (`9:16`) เหล่านี้ ระดับคุณภาพคือสาเหตุหลักที่ทำให้ภาพแถวที่สองมีราคาสูงกว่า:
+
+| คุณภาพของ GPT Image 2 | เหมาะกับงาน | ราคาต่อภาพโดยประมาณ |
+| --- | --- | ---: |
+| `low` | ร่างภาพเร็วและทดลอง prompt | $0.004 · ประมาณ ฿0.13 |
+| `medium` | สมดุลระหว่างคุณภาพและราคา | $0.043 · ประมาณ ฿1.45 |
+| `high` | รายละเอียดสูงสุดและภาพสำหรับใช้งานจริง | $0.132–$0.133 · ประมาณ ฿4.44–฿4.47 |
+
+ราคาเป็นค่าประเมินสำหรับภาพขนาดนี้ โดยอิงจากราคา GPT Image 2 ปัจจุบันบน OpenRouter ที่ $30 ต่อ 1 ล้าน output-image tokens และค่าใช้จ่ายจริงของภาพด้านล่าง ขนาดภาพ prompt และภาพอ้างอิงที่ต่างกันอาจทำให้ค่าใช้จ่ายสุดท้ายเปลี่ยนไป ตรวจราคาปัจจุบันได้จาก [หน้าโมเดล GPT Image 2](https://openrouter.ai/openai/gpt-image-2)
+
+**ตัวอย่างคุณภาพ Medium**
+
 | GPT Image 2 แบบทั่วไป | ใช้ดีไซน์ pop-art graffiti | ใช้ดีไซน์หนังสือนิทานเด็ก |
 | :---: | :---: | :---: |
 | [![โปสเตอร์ป้องกันเสียงดังแบบทั่วไป](../../examples/generic-gpt-image-2-hearing-protection-poster.webp)](../../examples/generic-gpt-image-2-hearing-protection-poster.webp) | [![โปสเตอร์ป้องกันเสียงดังสไตล์ pop-art graffiti](../../examples/pop-art-graffiti-design-guided-hearing-protection-poster.webp)](../../examples/pop-art-graffiti-design-guided-hearing-protection-poster.webp) | [![โปสเตอร์ป้องกันเสียงดังสไตล์หนังสือนิทานเด็ก](../../examples/childrens-storybook-design-guided-hearing-protection-poster.webp)](../../examples/childrens-storybook-design-guided-hearing-protection-poster.webp) |
-| ประมาณ ฿1.45 | ประมาณ ฿1.45 | ประมาณ ฿1.45 |
+| $0.043 · ประมาณ ฿1.45 | $0.043 · ประมาณ ฿1.45 | $0.043 · ประมาณ ฿1.45 |
 
-| ใช้ดีไซน์งานกระดาษซ้อนชั้น | ใช้ดีไซน์แมว 3D น่ารัก | ใช้ดีไซน์พิกเซลอาร์ตไคจู |
+**ตัวอย่างคุณภาพ High**
+
+| ใช้ดีไซน์งานกระดาษซ้อนชั้น | ใช้ดีไซน์แมว 3D น่ารัก | ใช้ดีไซน์พิกเซลอาร์ต |
 | :---: | :---: | :---: |
-| [![โปสเตอร์ป้องกันเสียงดังสไตล์งานกระดาษซ้อนชั้น](../../examples/papercraft-design-guided-hearing-protection-poster.webp)](../../examples/papercraft-design-guided-hearing-protection-poster.webp) | [![โปสเตอร์ป้องกันเสียงดังสไตล์แมว 3D น่ารัก](../../examples/cute-3d-cat-design-guided-hearing-protection-poster.webp)](../../examples/cute-3d-cat-design-guided-hearing-protection-poster.webp) | [![โปสเตอร์ป้องกันเสียงดังสไตล์พิกเซลอาร์ตไคจู](../../examples/pixel-art-kaiju-design-guided-hearing-protection-poster.webp)](../../examples/pixel-art-kaiju-design-guided-hearing-protection-poster.webp) |
+| [![โปสเตอร์ป้องกันเสียงดังสไตล์งานกระดาษซ้อนชั้น](../../examples/papercraft-design-guided-hearing-protection-poster.webp)](../../examples/papercraft-design-guided-hearing-protection-poster.webp) | [![โปสเตอร์ป้องกันเสียงดังสไตล์แมว 3D น่ารัก](../../examples/cute-3d-cat-design-guided-hearing-protection-poster.webp)](../../examples/cute-3d-cat-design-guided-hearing-protection-poster.webp) | [![โปสเตอร์ป้องกันเสียงดังสไตล์พิกเซลอาร์ต](../../examples/pixel-art-design-guided-hearing-protection-poster.webp)](../../examples/pixel-art-design-guided-hearing-protection-poster.webp) |
 | $0.133 · ประมาณ ฿4.47 | $0.132 · ประมาณ ฿4.44 | $0.132 · ประมาณ ฿4.44 |
 
 > ภาพเหล่านี้เป็นตัวอย่างจาก AI ควรตรวจความถูกต้องทางการแพทย์ ความปลอดภัย และกฎหมายก่อนนำไปใช้จริง
 
-ภาพแถวแรกสร้างด้วย `openai/gpt-image-2` คุณภาพ `medium` อัตราส่วน `9:16` ครั้งละหนึ่งภาพ ราคาประเมินอยู่ที่ประมาณ US$0.043 หรือ ฿1.45 ต่อภาพ ส่วนแถวที่สองแสดงค่าใช้จ่ายจริงที่ให้มาพร้อมกับแต่ละภาพ ค่าใช้จ่ายสุดท้ายบน OpenRouter อาจต่างกันตามความยาวของ prompt จำนวนภาพอ้างอิง ราคาโมเดล การตั้งค่า และอัตราแลกเปลี่ยน
+ภาพแถวแรกใช้คุณภาพ `medium` ส่วนแถวที่สองใช้คุณภาพ `high` ทุกภาพสร้างด้วย `openai/gpt-image-2` อัตราส่วน `9:16` ครั้งละหนึ่งภาพ ค่าใช้จ่ายสุดท้ายบน OpenRouter อาจต่างกันตามความยาวของ prompt จำนวนภาพอ้างอิง ราคาโมเดล การตั้งค่า และอัตราแลกเปลี่ยน
 
 ### จ่ายตามจำนวนภาพที่สร้าง
 
