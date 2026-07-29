@@ -41,10 +41,10 @@ These are strong current choices available through OpenRouter:
 
 | Model | One OpenRouter key | Current OpenRouter price | Useful for |
 | --- | :---: | --- | --- |
-| [`openai/gpt-5.4-image-2`](https://openrouter.ai/openai/gpt-5.4-image-2) | ✅ | Image output: **$30 / 1M tokens** (about **฿1,009**) | Image generation combined with GPT-5.4 reasoning |
-| [`google/gemini-3.1-flash-image-preview`](https://openrouter.ai/google/gemini-3.1-flash-image-preview) | ✅ | Image output: **$60 / 1M tokens** (about **฿2,018**) | Fast drafts, editing, and resolutions from 512 to 4K |
-| [`google/gemini-3-pro-image-preview`](https://openrouter.ai/google/gemini-3-pro-image-preview) | ✅ | Image output: **$120 / 1M tokens** (about **฿4,036**) | Complex layouts, multilingual text, and 2K/4K work |
-| [`x-ai/grok-imagine-image-quality`](https://openrouter.ai/x-ai/grok-imagine-image-quality) | ✅ | **$0.05 / 1K image** (about **฿1.68**) or **$0.07 / 2K image** (about **฿2.35**) | Photorealism, text in images, and reference-based edits |
+| [`openai/gpt-5.4-image-2`](https://openrouter.ai/openai/gpt-5.4-image-2) | ✅ | Image output: **$30 / 1M tokens** (**~฿1,009**) | Image generation combined with GPT-5.4 reasoning |
+| [`google/gemini-3.1-flash-image-preview`](https://openrouter.ai/google/gemini-3.1-flash-image-preview) | ✅ | Image output: **$60 / 1M tokens** (**~฿2,018**) | Fast drafts, editing, and resolutions from 512 to 4K |
+| [`google/gemini-3-pro-image-preview`](https://openrouter.ai/google/gemini-3-pro-image-preview) | ✅ | Image output: **$120 / 1M tokens** (**~฿4,036**) | Complex layouts, multilingual text, and 2K/4K work |
+| [`x-ai/grok-imagine-image-quality`](https://openrouter.ai/x-ai/grok-imagine-image-quality) | ✅ | **$0.05 / 1K image** (**~฿1.68**) or **$0.07 / 2K image** (**~฿2.35**) | Photorealism, text in images, and reference-based edits |
 
 Prices were checked on 29 July 2026 and use ฿33.6367 per US$1. Token-priced models charge according to the number of image-output tokens, so the cost of one image changes with size and model settings. Grok also charges $0.01 (about ฿0.34) for each input reference image. Check each linked OpenRouter model page before generating because models and prices can change.
 
@@ -58,9 +58,9 @@ For these 864×1536 (`9:16`) GPT Image 2 examples, quality is the main reason th
 
 | GPT Image 2 quality | Best for | Approximate price per image |
 | --- | --- | ---: |
-| `low` | Quick drafts and prompt checks | About $0.004 · ฿0.13 *(estimated)* |
-| `medium` | Balanced quality and cost | $0.0355–$0.0361 · ฿1.19–฿1.21 *(recorded)* |
-| `high` | Maximum detail and final artwork | $0.132–$0.133 · ฿4.44–฿4.47 *(recorded)* |
+| `low` | Quick drafts and prompt checks | ~$0.004 · ~฿0.13 |
+| `medium` | Balanced quality and cost | $0.0355–$0.0361 · ~฿1.19–฿1.21 |
+| `high` | Maximum detail and final artwork | $0.132–$0.133 · ~฿4.44–฿4.47 |
 
 The medium and high ranges come from the actual OpenRouter generation logs for the images below. No low-quality example appears in the supplied log, so its price remains an estimate based on OpenRouter's current $30 per million GPT Image 2 output-image tokens. Different dimensions, prompts, and reference images can change the final charge. See the [GPT Image 2 model page](https://openrouter.ai/openai/gpt-image-2) for current pricing.
 
@@ -69,14 +69,14 @@ The medium and high ranges come from the actual OpenRouter generation logs for t
 | General GPT Image 2 | Pop-art graffiti design | Children's storybook design |
 | :---: | :---: | :---: |
 | [![General hearing protection poster](examples/generic-gpt-image-2-hearing-protection-poster.webp)](examples/generic-gpt-image-2-hearing-protection-poster.webp) | [![Pop-art graffiti hearing protection poster](examples/pop-art-graffiti-design-guided-hearing-protection-poster.webp)](examples/pop-art-graffiti-design-guided-hearing-protection-poster.webp) | [![Children's storybook hearing protection poster](examples/childrens-storybook-design-guided-hearing-protection-poster.webp)](examples/childrens-storybook-design-guided-hearing-protection-poster.webp) |
-| $0.0361 · about ฿1.21 | $0.0356 · about ฿1.20 | $0.0355 · about ฿1.19 |
+| $0.0361 · ~฿1.21 | $0.0356 · ~฿1.20 | $0.0355 · ~฿1.19 |
 
 **High-quality examples**
 
 | Layered papercraft design | Cute 3D cat design | Pixel-art design |
 | :---: | :---: | :---: |
 | [![Layered papercraft hearing protection poster](examples/papercraft-design-guided-hearing-protection-poster.webp)](examples/papercraft-design-guided-hearing-protection-poster.webp) | [![Cute 3D cat hearing protection poster](examples/cute-3d-cat-design-guided-hearing-protection-poster.webp)](examples/cute-3d-cat-design-guided-hearing-protection-poster.webp) | [![Pixel-art hearing protection poster](examples/pixel-art-design-guided-hearing-protection-poster.webp)](examples/pixel-art-design-guided-hearing-protection-poster.webp) |
-| $0.133 · about ฿4.47 | $0.132 · about ฿4.44 | $0.132 · about ฿4.44 |
+| $0.133 · ~฿4.47 | $0.132 · ~฿4.44 | $0.132 · ~฿4.44 |
 
 > These images came from AI. Check the medical, safety, and legal details before using them.
 
@@ -86,12 +86,12 @@ The first row used `medium` quality; the second used `high` quality. Every examp
 
 You do not need a paid ChatGPT subscription to run these skills through OpenRouter. OpenRouter charges for each API generation. A ChatGPT subscription includes many other services, so this is a useful cost check rather than a like-for-like comparison.
 
-| ChatGPT plan | Published US price | Approximate monthly price in Thai baht | Published image access | Same spend at about ฿1.20 per medium image |
+| ChatGPT plan | Published US price | Approximate monthly price in Thai baht | Published image access | Same spend at ~฿1.20 per medium image |
 | --- | ---: | ---: | --- | ---: |
 | Free | $0 | ฿0 | Limited and slower | Not compared because it is free |
-| Go | $8/month | About ฿269/month | More than Free; no fixed public image quota | About 224 images |
-| Plus | $20/month | About ฿673/month | More complex and accurate creation; limits apply | About 561 images |
-| Pro | $200/month | About ฿6,727/month | Unlimited and faster, subject to abuse guardrails | About 5,606 images |
+| Go | $8/month | ~฿269/month | More than Free; no fixed public image quota | ~224 images |
+| Plus | $20/month | ~฿673/month | More complex and accurate creation; limits apply | ~561 images |
+| Pro | $200/month | ~฿6,727/month | Unlimited and faster, subject to abuse guardrails | ~5,606 images |
 
 The baht figures use the Bank of Thailand's USD transfer rate from 24 July 2026, ฿33.6367 per US$1. They do not include tax, card fees, or regional pricing. Check [ChatGPT plan pricing](https://chatgpt.com/pricing/), [OpenAI's Go, Plus, and Pro announcement](https://openai.com/index/introducing-chatgpt-go/), [OpenAI image model pricing](https://developers.openai.com/api/docs/pricing#image-generation), and [Bank of Thailand exchange rates](https://www.bot.or.th/en/statistics/financial-institutions/exchange-rate.html) for current figures.
 
