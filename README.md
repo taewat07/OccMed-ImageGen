@@ -58,18 +58,18 @@ For these 864×1536 (`9:16`) GPT Image 2 examples, quality is the main reason th
 
 | GPT Image 2 quality | Best for | Approximate price per image |
 | --- | --- | ---: |
-| `low` | Quick drafts and prompt checks | $0.004 · about ฿0.13 |
-| `medium` | Balanced quality and cost | $0.043 · about ฿1.45 |
-| `high` | Maximum detail and final artwork | $0.132–$0.133 · about ฿4.44–฿4.47 |
+| `low` | Quick drafts and prompt checks | About $0.004 · ฿0.13 *(estimated)* |
+| `medium` | Balanced quality and cost | $0.0355–$0.0361 · ฿1.19–฿1.21 *(recorded)* |
+| `high` | Maximum detail and final artwork | $0.132–$0.133 · ฿4.44–฿4.47 *(recorded)* |
 
-Prices are estimates for this image size, based on OpenRouter's current $30 per million GPT Image 2 output-image tokens and the recorded costs below. Different dimensions, prompts, and reference images can change the final charge. See the [GPT Image 2 model page](https://openrouter.ai/openai/gpt-image-2) for current pricing.
+The medium and high ranges come from the actual OpenRouter generation logs for the images below. No low-quality example appears in the supplied log, so its price remains an estimate based on OpenRouter's current $30 per million GPT Image 2 output-image tokens. Different dimensions, prompts, and reference images can change the final charge. See the [GPT Image 2 model page](https://openrouter.ai/openai/gpt-image-2) for current pricing.
 
 **Medium-quality examples**
 
 | General GPT Image 2 | Pop-art graffiti design | Children's storybook design |
 | :---: | :---: | :---: |
 | [![General hearing protection poster](examples/generic-gpt-image-2-hearing-protection-poster.webp)](examples/generic-gpt-image-2-hearing-protection-poster.webp) | [![Pop-art graffiti hearing protection poster](examples/pop-art-graffiti-design-guided-hearing-protection-poster.webp)](examples/pop-art-graffiti-design-guided-hearing-protection-poster.webp) | [![Children's storybook hearing protection poster](examples/childrens-storybook-design-guided-hearing-protection-poster.webp)](examples/childrens-storybook-design-guided-hearing-protection-poster.webp) |
-| $0.043 · about ฿1.45 | $0.043 · about ฿1.45 | $0.043 · about ฿1.45 |
+| $0.0361 · about ฿1.21 | $0.0356 · about ฿1.20 | $0.0355 · about ฿1.19 |
 
 **High-quality examples**
 
@@ -86,12 +86,12 @@ The first row used `medium` quality; the second used `high` quality. Every examp
 
 You do not need a paid ChatGPT subscription to run these skills through OpenRouter. OpenRouter charges for each API generation. A ChatGPT subscription includes many other services, so this is a useful cost check rather than a like-for-like comparison.
 
-| ChatGPT plan | Published US price | Approximate monthly price in Thai baht | Published image access | Same spend at ฿1.45 per image |
+| ChatGPT plan | Published US price | Approximate monthly price in Thai baht | Published image access | Same spend at about ฿1.20 per medium image |
 | --- | ---: | ---: | --- | ---: |
 | Free | $0 | ฿0 | Limited and slower | Not compared because it is free |
-| Go | $8/month | About ฿269/month | More than Free; no fixed public image quota | About 185 images |
-| Plus | $20/month | About ฿673/month | More complex and accurate creation; limits apply | About 464 images |
-| Pro | $200/month | About ฿6,727/month | Unlimited and faster, subject to abuse guardrails | About 4,639 images |
+| Go | $8/month | About ฿269/month | More than Free; no fixed public image quota | About 224 images |
+| Plus | $20/month | About ฿673/month | More complex and accurate creation; limits apply | About 561 images |
+| Pro | $200/month | About ฿6,727/month | Unlimited and faster, subject to abuse guardrails | About 5,606 images |
 
 The baht figures use the Bank of Thailand's USD transfer rate from 24 July 2026, ฿33.6367 per US$1. They do not include tax, card fees, or regional pricing. Check [ChatGPT plan pricing](https://chatgpt.com/pricing/), [OpenAI's Go, Plus, and Pro announcement](https://openai.com/index/introducing-chatgpt-go/), [OpenAI image model pricing](https://developers.openai.com/api/docs/pricing#image-generation), and [Bank of Thailand exchange rates](https://www.bot.or.th/en/statistics/financial-institutions/exchange-rate.html) for current figures.
 
